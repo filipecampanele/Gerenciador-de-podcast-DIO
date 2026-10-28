@@ -1,0 +1,23 @@
+{
+  "name": "podcast-manager",
+  "version": "1.0.0",
+  "description": "Gerenciador de Podcasts - API Node.js com TypeScript e HTTP Module",
+  "main": "dist/server.js",
+  "scripts": {
+    "start:dev": "tsx src/server.ts",
+    "start:watch": "tsx watch src/server.ts",
+    "build": "tsup src --out-dir dist",
+    "start:dist": "node dist/server.js"
+  },
+  "keywords": ["nodejs", "typescript", "http", "podcasts"],
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "tsup": "^8.1.0",
+    "tsx": "^4.15.0",
+    "typescript": "^5.4.5"
+  }
+}
